@@ -47,9 +47,9 @@ namespace VTYPE {
 //////////////////////////////////////////////////////////////////////////////////////
 /// \brief Bit-wise masks for VTYPE bitfield
 typedef enum MASK{
-	// MSKSEW = 0x1C,
-	MSKSEW = 0x38,
-	// MSKLMUL = 0x03,
+	MSKSEW = 0x1C,
+	//MSKSEW = 0x38,
+	//MSKLMUL = 0x03,
 	MSKLMUL = 0x07,
 	MSKFLMUL = 0x20, // ?
 	MSKTA = 0x40,
@@ -59,8 +59,8 @@ typedef enum MASK{
 //////////////////////////////////////////////////////////////////////////////////////
 /// \brief VTYPE bitfield element offsets
 typedef enum OFFSETS{
-	// OFFSEW = 2,
-	OFFSEW = 3,
+	OFFSEW = 2,
+	//OFFSEW = 3,
 	OFFFLMUL = 3
 }offsets_t;
 

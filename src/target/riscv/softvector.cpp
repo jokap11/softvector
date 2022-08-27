@@ -73,7 +73,7 @@ uint8_t vload_encoded_unitstride(
 
 	VectorRegField = static_cast<uint8_t*>(pV);
 
-	std::function<void(size_t, uint8_t*, size_t)> f_readMem = [pM](size_t addr, uint8_t* buff, size_t len) {
+	std::function<void(size_t, uint8_t*, size_t)> f_readMem = [&pM](size_t addr, uint8_t* buff, size_t len) {
 		for (size_t i = 0; i<len; ++i)
 			buff[i] = pM[addr+i];
 	};
@@ -99,7 +99,7 @@ uint8_t vload_encoded_stride(
 
 	VectorRegField = static_cast<uint8_t*>(pV);
 
-	std::function<void(size_t, uint8_t*, size_t)> f_readMem = [pM](size_t addr, uint8_t* buff, size_t len) {
+	std::function<void(size_t, uint8_t*, size_t)> f_readMem = [&pM](size_t addr, uint8_t* buff, size_t len) {
 		for (size_t i = 0; i<len; ++i)
 			buff[i] = pM[addr+i];
 	};
